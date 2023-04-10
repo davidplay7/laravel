@@ -19,6 +19,27 @@
         @if(10>5)
         <p>Verdade</p>
         @endif
-    </body>
     <p> {{ $nome }}</p>
+    @for($i = 0; $i < count($arr); $i++)
+        <p>{{$arr[$i]}}</p>
+    @endfor
+    {{--comentario oculto--}}
+    <!--comentario aparece no inspesionar-->
+    @foreach($contatos as $contato)
+                <p>{{
+                    $loop->index
+                }}
+                </br>
+                {{
+                    $contato
+
+                    }}</p>
+    @endforeach
+
+
+
+
+
+</body>
+   
 </html>
