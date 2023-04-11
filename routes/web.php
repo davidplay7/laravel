@@ -23,3 +23,9 @@ Route::get('/', function () {
         'contatos' => $contatos
     ]);
 });
+
+Route::get('/sobre', function () {
+    return view('sobre', [
+        
+    ]);
+});
