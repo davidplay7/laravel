@@ -2,7 +2,7 @@
 
 @section('title', 'David Play')
 @section('content')
-<img src="img/projeto.png" alt="foto do projeto"> {{--fica na pasta public--}}  
+<a href="https://meu-portifolio-sepia.vercel.app/#" target="_blank"><img src="img/projeto.png" alt="foto do projeto"></a> {{--fica na pasta public--}}  
     @if(10>5)
         <p>Verdade</p>
         @endif
