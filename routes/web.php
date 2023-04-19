@@ -12,17 +12,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    $nome = "David";
-    $ar = ["David",18,34234,"viva"];
-    $contatos = ["ana","maria","jose","vitu"];
-    return view('welcome', [
-        'nome' => $nome,
-        'arr' => $ar,
-        'contatos' => $contatos
-    ]);
-});
+use App\http\Controllers\eventos;
+Route::get('/', [eventos::class, 'index']);
 
 Route::get('/sobre', function () {
     return view('sobre', [
