@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-use App\http\Controllers\eventos;
+use App\Http\Controllers\eventos;
 Route::get('/', [eventos::class, 'index']);
 
 Route::get('/sobre', function () {
