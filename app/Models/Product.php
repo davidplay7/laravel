@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'name',
+        'description',
+        'price',
+        // Adicione '_token' à lista de campos preenchíveis em massa
+        
+    ];
 }
