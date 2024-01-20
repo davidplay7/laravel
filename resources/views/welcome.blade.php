@@ -21,5 +21,5 @@
             $contato
             }}</p>
     @endforeach
-
+    <a href="\products">CRUD</a>
 @endsection

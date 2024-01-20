@@ -37,4 +37,5 @@
             @endforeach
         </tbody>
     </table>
+    <a href="\">voltar</a>
 @endsection
